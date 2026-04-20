@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhandabani M | AI & ML Portfolio</title>
+    <meta name="description" content="Portfolio of Dhandabani M, Computer Science student specializing in AI & ML, Frontend Developer, and UI Designer.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Devicon for High Quality Tech Logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    <!-- Mouse Cursor Glow -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+    
+    <!-- Nav Flying Rocket -->
+    <div class="fly-rocket" id="fly-rocket"><i class="fas fa-rocket"></i></div>
+    <!-- Particle Background -->
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Deep Tech HUD Overlay -->
+    <div class="hud-overlay">
+        <div class="ambient-glow top-right"></div>
+        <div class="ambient-glow bottom-left"></div>
+    </div>
+
+    <!-- Overlay for mobile nav -->
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">Dhandabani<span>.AI</span></a>
+            
+            <div class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-greeting reveal-left">SYSTEM.INITIALIZE()</div>
+                <h1 class="hero-name reveal-left" style="transition-delay: 0.1s;">Hi, I'm <br><span class="highlight">Dhandabani M</span></h1>
+                <h2 class="hero-role reveal-left" style="transition-delay: 0.2s;">
+                    <span class="typed-text" id="typed-text"></span><span class="cursor"></span>
+                </h2>
+                <p class="hero-tagline reveal-left" style="transition-delay: 0.3s;">Design. Code. Impress.</p>
+                
+                <div class="hero-buttons reveal-left" style="transition-delay: 0.4s;">
+                    <a href="https://github.com/dhandabani7966" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i> GitHub Profile
+                    </a>
+                    <a href="#projects" class="btn btn-outline">
+                        <i class="fas fa-code"></i> View Projects
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+                    <div class="hero-orbit"></div>
+                    <div class="hero-orbit-2"></div>
+                    <div class="hero-image-glow"></div>
+                    <img src="profile.jpg" alt="Dhandabani M" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <!-- AI Infusion -->
+        <div class="bg-infusion about-infusion infusion-img"></div>
+        <div class="ai-watermark" style="top: 20%; left: 24px;">AI_IDENTITY_SYSTEM_v4.0.1</div>
+        
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">01. Identity</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">A glimpse into my background, academic journey, and passions.</p>
+            </div>
+
+            <div class="about-card reveal-scale">
+                <div class="about-content-split">
+                    <div>
+                        <p class="about-text">
+                            I am a Computer Science student specializing in <strong>AI & ML</strong> at <strong>Kangeyam Institute of Technology</strong>. Currently serving as the <strong>Vice President</strong> of the Gamer Zone Club and <strong>Joint Secretary</strong> of the IEEE Educational Society.
+                        </p>
+                        <br>
+                        <p class="about-text">
+                            Passionate about Machine Learning, UI design, and building modern digital products. I maintain a disciplined lifestyle, balance extracurricular leadership, and hold a strong academic record, being <strong>ranked 4th</strong> in my semester.
+                        </p>
+
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">4th</div>
+                                <div class="stat-label">Semester Rank</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">2</div>
+                                <div class="stat-label">Leadership Roles</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Commitment</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-accent-wrapper">
+                        <img src="ai_accent.png" alt="AI Core Hologram" class="ai-core-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <!-- AI Infusion -->
+        <div class="bg-infusion skills-infusion infusion-img"></div>
+        <div class="ai-watermark" style="bottom: 10%; right: 24px;">NEURAL_ENGINE_CORE_ACTIVE</div>
+
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">02. Capabilities</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">The tools and technologies I use to bring ideas to life.</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Programming -->
+                <div class="skill-card reveal" style="transition-delay: 0.1s;">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3 class="skill-card-title">Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-python-plain colored"></i> Python</span>
+                        <span class="skill-tag"><i class="devicon-java-plain colored"></i> Java</span>
+                        <span class="skill-tag"><i class="devicon-c-plain colored"></i> C</span>
+                    </div>
+                    
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>Python</span> <span>90%</span></div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>Java</span> <span>80%</span></div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill-card reveal" style="transition-delay: 0.2s;">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="skill-card-title">Web Dev</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-html5-plain colored"></i> HTML</span>
+                        <span class="skill-tag"><i class="devicon-css3-plain colored"></i> CSS</span>
+                        <span class="skill-tag"><i class="devicon-javascript-plain colored"></i> JS</span>
+                        <span class="skill-tag"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>Frontend</span> <span>85%</span></div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>Database</span> <span>75%</span></div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Tools -->
+                <div class="skill-card reveal" style="transition-delay: 0.3s;">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="skill-card-title">Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="devicon-canva-original colored"></i> Canva</span>
+                        <span class="skill-tag"><i class="devicon-photoshop-plain colored"></i> Photoshop</span>
+                        <span class="skill-tag"><i class="devicon-firebase-plain colored"></i> Firebase</span>
+                        <span class="skill-tag"><i class="devicon-netlify-plain colored"></i> Netlify</span>
+                        <span class="skill-tag"><i class="devicon-github-original colored"></i> GitHub</span>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>Design</span> <span>95%</span></div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="95%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>Deployment</span> <span>85%</span></div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="85%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Tools -->
+                <div class="skill-card reveal" style="transition-delay: 0.4s;">
+                    <div class="skill-card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="skill-card-title">AI Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-microchip"></i> Antigravity</span>
+                        <span class="skill-tag"><i class="fas fa-bolt"></i> Cursor</span>
+                        <span class="skill-tag"><i class="fas fa-magic"></i> Lovable</span>
+                        <span class="skill-tag"><i class="fas fa-brain"></i> Codex</span>
+                        <span class="skill-tag"><i class="fas fa-rocket"></i> Gamma</span>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>AI Integration</span> <span>90%</span></div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>Prompt Eng.</span> <span>95%</span></div>
+                            <div class="skill-bar"><div class="skill-bar-fill" data-width="95%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">03. Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-world solutions built with modern technology.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-image-wrapper">
+                        <img src="project1.png" alt="SignalSOS Thumbnail" class="project-img">
+                    </div>
+                    <div class="project-card-number">01</div>
+                    <span class="project-card-badge">IoT / Mobile</span>
+                    <h3 class="project-card-title">SignalSOS</h3>
+                    <p class="project-card-desc">
+                        A smart accident detection system that automatically sends GPS location and SMS, accompanied by an auto-call feature to emergency contacts upon detecting heavy impact.
+                    </p>
+                    <div class="project-card-tech">
+                        <span class="project-tech-tag">Java</span>
+                        <span class="project-tech-tag">Android SDK</span>
+                        <span class="project-tech-tag">Sensors</span>
+                    </div>
+                    <a href="https://github.com/dhandabani7966/SIGNALSOS.git" target="_blank" class="project-card-link">
+                        View Repository <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal" data-tilt style="transition-delay: 0.2s;">
+                    <div class="project-image-wrapper">
+                        <img src="project2.png" alt="Slide Changer Thumbnail" class="project-img">
+                    </div>
+                    <div class="project-card-number">02</div>
+                    <span class="project-card-badge">Machine Learning</span>
+                    <h3 class="project-card-title">Slide Changer</h3>
+                    <p class="project-card-desc">
+                        An innovative application allowing users to control presentations purely through hand gestures and voice commands, eliminating the need for physical clickers.
+                    </p>
+                    <div class="project-card-tech">
+                        <span class="project-tech-tag">Python</span>
+                        <span class="project-tech-tag">OpenCV</span>
+                        <span class="project-tech-tag">MediaPipe</span>
+                    </div>
+                    <a href="#" class="project-card-link">
+                        View Details <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal" data-tilt style="transition-delay: 0.4s;">
+                    <div class="project-image-wrapper">
+                        <img src="brochure.jpg" alt="Department Brochure Design" class="project-img">
+                    </div>
+                    <div class="project-card-number">03</div>
+                    <span class="project-card-badge">Graphic Design / UI</span>
+                    <h3 class="project-card-title">AIML Dept Brochure</h3>
+                    <p class="project-card-desc">
+                        A fully custom, futuristic digital brochure designed for the Artificial Intelligence & Machine Learning department at KIT, visually summarizing curriculum, MoUs, and recruiters.
+                    </p>
+                    <div class="project-card-tech">
+                        <span class="project-tech-tag">Photoshop</span>
+                        <span class="project-tech-tag">Canva</span>
+                        <span class="project-tech-tag">UI/UX</span>
+                    </div>
+                    <a href="#" class="project-card-link">
+                        View Design <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <!-- AI Infusion -->
+        <div class="bg-infusion timeline-infusion infusion-img"></div>
+        
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">04. Journey</span>
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">Milestones and participations along my academic path.</p>
+            </div>
+
+            <div class="timeline" id="experience-timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-rocket-container" id="timeline-rocket">
+                    <i class="fas fa-rocket"></i>
+                </div>
+
+                <div class="timeline-row left reveal-left">
+                    <div class="timeline-item">
+                        <div class="timeline-item-number">4+</div>
+                        <div class="timeline-text-wrapper">
+                            <h3 class="timeline-item-title">Events Hosted</h3>
+                            <p class="timeline-item-desc">Successfully organized and managed multiple technical symposiums and club activities within the college.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-row right reveal-left" style="transition-delay: 0.1s;">
+                    <div class="timeline-item">
+                        <div class="timeline-item-number">3</div>
+                        <div class="timeline-text-wrapper">
+                            <h3 class="timeline-item-title">Hackathons</h3>
+                            <p class="timeline-item-desc">Participated in competitive 24-hour coding events, building rapid prototypes for real-world problems.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-row left reveal-left" style="transition-delay: 0.2s;">
+                    <div class="timeline-item">
+                        <div class="timeline-item-number">20+</div>
+                        <div class="timeline-text-wrapper">
+                            <h3 class="timeline-item-title">Tech Events</h3>
+                            <p class="timeline-item-desc">Active participant in workshops, seminars, and technical competitions across various institutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-row right reveal-left" style="transition-delay: 0.3s;">
+                    <div class="timeline-item">
+                        <div class="timeline-item-number"><i class="fas fa-trophy"></i></div>
+                        <div class="timeline-text-wrapper">
+                            <h3 class="timeline-item-title">Multiple Awards</h3>
+                            <p class="timeline-item-desc">Won several prizes in coding debugging, paper presentations, and UI design contests.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">05. Offerings</span>
+                <h2 class="section-title">Services</h2>
+                <p class="section-subtitle">What I can do for you and your business.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="service-title">Website Dev</h3>
+                    <p class="service-desc">Responsive, fast, and modern web applications tailored to your needs.</p>
+                </div>
+                
+                <div class="service-card reveal" style="transition-delay: 0.1s;">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3 class="service-title">Poster Design</h3>
+                    <p class="service-desc">Eye-catching digital posters and promotional materials.</p>
+                </div>
+
+                <div class="service-card reveal" style="transition-delay: 0.2s;">
+                    <div class="service-icon"><i class="fas fa-image"></i></div>
+                    <h3 class="service-title">Photo Editing</h3>
+                    <p class="service-desc">Professional image retouching, color grading, and composition.</p>
+                </div>
+
+                <div class="service-card reveal" style="transition-delay: 0.3s;">
+                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+                    <h3 class="service-title">Freelancing</h3>
+                    <p class="service-desc">Available for short-term contracts and distinct project deliverables.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">06. Vision</span>
+                <h2 class="section-title">Future Goals</h2>
+            </div>
+            
+            <div class="goals-list" id="goals-list">
+                <div class="goal-item reveal-scale">
+                    <i class="fas fa-robot goal-icon"></i><br>
+                    <span class="goal-item-text">Become an ML Engineer</span>
+                    <p class="goal-item-sub">Mastering deep learning architectures and data pipelines.</p>
+                </div>
+                <div class="goal-item reveal-scale" style="transition-delay: 0.2s;">
+                    <i class="fas fa-magic goal-icon"></i><br>
+                    <span class="goal-item-text">Build AI Products</span>
+                    <p class="goal-item-sub">Creating consumer-facing applications powered by GenAI.</p>
+                </div>
+                <div class="goal-item reveal-scale" style="transition-delay: 0.4s;">
+                    <i class="fas fa-chart-line goal-icon"></i><br>
+                    <span class="goal-item-text">Grow as Freelancer</span>
+                    <p class="goal-item-sub">Expanding global client base and taking on complex projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">07. Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a project in mind or want to discuss AI? Let's talk.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info reveal-left">
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <div class="contact-info-label">Email</div>
+                            <div class="contact-info-value"><a href="mailto:dhandabani7966@gmail.com">dhandabani7966@gmail.com</a></div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <div class="contact-info-label">Phone</div>
+                            <div class="contact-info-value"><a href="tel:+918838480379">+91 88384 80379</a></div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <div class="contact-info-label">Location</div>
+                            <div class="contact-info-value">Tamil Nadu, India</div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/dhandabani-m-9b9912328" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/dhandabani7966" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-card reveal">
+                    <h3>Send a Message</h3>
+                    <form action="#" method="POST" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-input" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-paper-plane"></i> Let's Work Together
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        </div>
+    </section>
+
+    <!-- Post-Contact Call to Action -->
+    <section class="section py-5 text-center">
+        <div class="container">
+            <div class="reveal-scale">
+                <h3 class="mb-4">Ready to pioneer the future with AI?</h3>
+                <a href="mailto:dhandabani7966@gmail.com" class="btn btn-primary">
+                    <i class="fas fa-handshake"></i> Hire Me Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Designed & Built by <span class="accent">Dhandabani M</span> © 2026</p>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <!-- Vanilla Tilt for 3D Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
